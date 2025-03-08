@@ -1,0 +1,53 @@
+/* General Styles */
+.app-bar {
+  background-color: #3f51b5;
+}
+.section-title {
+  margin-top: 20px;
+  color: #3f51b5;
+  text-align: center;
+}
+.table-container {
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Flip Animation for Product Rows */
+@keyframes flipIn {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+.flip-card {
+  animation: flipIn 0.6s ease-out;
+  transform-style: preserve-3d;
+}
+
+/* Scale Animation for Invoice Rows */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.scale-row {
+  animation: scaleIn 0.5s ease-out;
+}
+
+/* Button Styles */
+.MuiButton-containedPrimary {
+  background-color: #3f51b5;
+  color: #fff;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #303f9f;
+}
